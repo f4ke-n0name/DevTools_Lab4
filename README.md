@@ -86,6 +86,25 @@ class RectangleTestCase(unittest.TestCase):
         Compares the output and the answer we calculated
         '''
         self.assertEqual(res, 40)
+    def test_negative_argument(self):
+        """
+        Test if rectangle has a negative argument
+        """
+        res = perimeter(-10, 10)
+        '''
+        Compares the output and the answer we calculated
+        '''
+        self.assertEqual(res, Exception)
+
+    def test_string_argument(self):
+        """
+        Test if rectangle has a string argument
+        """
+        res = perimeter("10", 10)
+        '''
+        Compares the output and the answer we calculated
+        '''
+        self.assertEqual(res, Exception)
 ```
 ## Author:
 Абдульминев Данил M3101
